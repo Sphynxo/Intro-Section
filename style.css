@@ -9,12 +9,12 @@
 html {
   font-size: 62.5%;
   font-family: "Epilogue", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #fafafa;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 main {
@@ -73,14 +73,14 @@ main {
 }
 
 .dropdown-content {
+  position: absolute;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
   padding: 2.4rem;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
-  position: absolute;
-  z-index: 1;
+background-color: #fafafa;
   animation: fadeIn 0.3s ease forwards;
 }
 
@@ -97,15 +97,16 @@ main {
   margin-right: 1.4rem;
 }
 
-.features-content {
-  top: 2.8rem;
-  left: -6rem;
-}
 
 .company-content {
   top: 2.8rem;
   right: -3.2rem;
   left: 0;
+}
+
+.features-content {
+  top: 2.8rem;
+  left: -6rem;
 }
 
 .login-register {
@@ -307,8 +308,6 @@ main {
 
   body {
     padding: 0;
-    position: relative;
-
   }
 
   .blur {
@@ -343,7 +342,6 @@ main {
     background-color: #fafafa;
     width: 60%;
     height: 100vh;
-    z-index: 1;
     right: 0;
     top: 0;
     padding: 8rem 2.4rem 0 2.4rem;
