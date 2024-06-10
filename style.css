@@ -337,7 +337,7 @@ background-color: #fafafa;
   }
 
   .main-nav {
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     background-color: #fafafa;
     width: 60%;
